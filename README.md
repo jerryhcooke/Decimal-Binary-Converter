@@ -1,12 +1,34 @@
-A work in progress to apply practical applications to the Python I've been learning.
+# Decimal to Binary Converter
 
-Completed:
+An attempt at creating a simple decimal to binary converter, using comparison looping rather than a recursion based technique.
 
-- comparison_generator function that is used to generate a list of binary column headers.
-- Basic script, it currently generates the correct decimal conversion, but it's untidy.
+## Getting Started
 
-To-to:
+These instructions will allow you to test the code on your own system.
 
-- Split the code that splits the outputted list into four-digit strings into a seperate function.
-- Fix the afformentioned function so that it generates four-digit nibbles properly. 
+### Prerequisites
 
+What things you need to install the software and how to install them
+
+```
+Python 3.x
+```
+
+### Installing
+
+Download the Zip from above or clone the repo to a local directory. Then simply run Decimal_to_Binary_Converter.py.
+
+```
+$ git clone https://github.com/jerryhcooke/Decimal-Binary-Converter.git
+```
+
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Authors
+
+* **Jerry Cooke** - - [JC](http://www.jerryhcooke.com)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
