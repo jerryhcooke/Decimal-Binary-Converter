@@ -24,7 +24,7 @@ $ git clone https://github.com/jerryhcooke/Decimal-Binary-Converter.git
 
 ## Authors
 
-* **Jerry Cooke** - - [JC](http://www.jerryhcooke.com)
+* **Jerry Cooke** - - [Personal Website](http://www.jerryhcooke.com)
 
 ## License
 
