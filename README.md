@@ -8,7 +8,7 @@ These instructions will allow you to test the code on your own system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The converter is being programmed with Python3, so is not backward compatible. 
 
 ```
 Python 3.x
@@ -21,9 +21,6 @@ Download the Zip from above or clone the repo to a local directory. Then simply 
 ```
 $ git clone https://github.com/jerryhcooke/Decimal-Binary-Converter.git
 ```
-
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Authors
 

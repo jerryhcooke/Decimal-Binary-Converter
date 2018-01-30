@@ -1,3 +1,5 @@
+# A converter that takes a denary number and converts it, using comparison rather than recursion, to binary
+
 print("Please enter a decimal number to convert")
 
 while True:
@@ -18,10 +20,10 @@ while True:
                 decimal -= n
             else:
                 binary.append(0)
-        converted = (str(i) for i in binary)
+        converted = (str(i) for i in binary)  # I need to turn this section of code into a function to tidy things up
         joined= ''.join(converted)
         n = 4
-        display = [joined[i:i+n] for i in range (0, len(joined), n)]
+        display = [joined[i:i+n] for i in range (0, len(joined), n)]  # rejig so that last block is always four digits
         print("")
         print(display)
         print("")
