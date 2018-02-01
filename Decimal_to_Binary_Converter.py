@@ -19,17 +19,8 @@ def convert_to_binary(decimal):  # takes the output of generate_comparisons and 
             decimal -= number
         else:
             binary.append(0)
-    return binary
-
-
-def split_into_fours(output):  # takes an inputted list, reverses it, splits it into four, then reverses it
-    new_string = (str(i) for i in output)
-    joined = ''.join(new_string)
-    joined_flipped = (reversed(joined))
-    iterable = ''.join(joined_flipped)
-    display = [iterable[i:i+4] for i in range (0, len(joined), 4)]
-    display_flipped = (reversed(display))
-    return ' '.join(display_flipped)
+    new_string = "".join(str(i) for i in binary)
+    return new_string
 
 
 def binary_to_decimal(user_binary):  # takes an inputted binary number and converts decimal
@@ -41,19 +32,35 @@ def binary_to_decimal(user_binary):  # takes an inputted binary number and conve
 
 while True:
 
-    print("To convert Decimal > Binary, enter B, or for Binary > Decimal, enter D, or enter X to quit", "\n")
-    choice = input("Please select an option: ")
+    print("Please select from the following options:", "\n")
+    print("1 - Convert Decimal -> Binary")
+    print("2 - Convert Binary -> Decimal")
+    print("X - Exit the program", "\n")
+    choice = input("Please make your selection: ")
 
     if choice == "x":
         break
-    elif choice == 'b':
-        user_number = input("Your number: ")
-        result = split_into_fours(convert_to_binary(int(user_number)))
-        print("Your number converted to binary is: ", result, " \n")
-    else:
-        user_number = input("Your number: ")
-        result = binary_to_decimal(user_number)
-        print("Your number converted to decimal is: ", result, " \n")
 
+    elif choice == '1':
+
+        try:
+            user_number = input("Your number: ")
+            result = convert_to_binary(int(user_number))
+            print("\n", "Your number converted to binary is: ", "0b", result, " \n")
+        except ValueError:
+            print("\n", "Please enter an integer" " \n")
+
+    elif choice == '2':
+
+        try:
+
+            user_number = input("Your number: ")
+            result = binary_to_decimal(user_number)
+            print("\n", "Your number converted to decimal is: ", result, " \n")
+        except ValueError:
+            print("\n""Please enter a decimal number." " \n")
+
+    else:
+        print("\n","!! Please select from one of the three options !!", " \n")
 
 
