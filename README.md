@@ -1,6 +1,6 @@
 # Decimal to Binary Converter
 
-An attempt at creating a simple decimal to binary converter, using comparison looping rather than a recursion based technique.
+An attempt at creating a simple decimal < - > binary converter, using comparison looping rather than a recursion based technique.
 
 ## Getting Started
 
