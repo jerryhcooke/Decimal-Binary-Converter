@@ -1,5 +1,12 @@
 # A converter that takes a denary number and converts it, using comparison rather than recursion, to binary
+import sys
 
+from colorama import init
+init(strip=not sys.stdout.isatty())
+from termcolor import cprint
+from pyfiglet import figlet_format
+
+cprint(figlet_format('Binary / Decimal Converter', font='doom'),'white', attrs=['bold'])
 
 def generate_comparisons(number): # generates a list of powers of two, the max being the first that is greater than n
     list = [1]
